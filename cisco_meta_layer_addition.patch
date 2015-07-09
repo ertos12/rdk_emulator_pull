@@ -1,0 +1,10 @@
+--- meta-cmf/orig-setup-environtment	2015-07-08 14:13:27.918167485 -0400
++++ meta-cmf/setup-environment	2015-07-08 14:14:13.602165084 -0400
+@@ -22,6 +22,7 @@
+ cat >> conf/bblayers.conf <<EOF
+ BBLAYERS =+ "\${RDKROOT}/meta-cmf-bsp-emulator"
+ BBLAYERS =+ "\${RDKROOT}/meta-cmf"
++BBLAYERS =+ "\${RDKROOT}/meta-cisco-oss"
+ EOF
+ 
+ # TEMPORARY HACK: patch opensource layers.
